@@ -1,0 +1,112 @@
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% for signature
+\usepackage{graphicx}
+
+% Specify the location of the img 
+\imgdir[img/]
+%\graphicspath{{img/}}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+\photo[right]{./img/portrait_small.jpg}
+\name{Susann}{Vorberg}
+\position{Ph.D. in Computational Biology}
+\address{Tannenwaldstrasse 11, 81375 Munich}
+\birthinfo{31-01-1987}{Leipzig}
+
+
+\mobile{(+49) 177 6017787} 
+\email{susann.vorberg@gmail.com}
+%\homepage{www.posquit0.com}
+\github{susannvorberg}
+\linkedin{susannvorberg}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+\extrainfo{\href{https://scholar.google.de/citations?hl=de&user=QdQiirMAAAAJ} {Google Scholar}}
+
+%\quote{``Must be the change that you want to see in the world."}
+
+
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+
+% Print the header with above personal informations
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Susann Vorberg~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+
+\input{content/education.tex}
+\input{content/experience.tex}
+\input{content/skills.tex}
+\input{content/softskills.tex}
+\input{content/presentations.tex}
+\input{content/publications.tex}
+\input{content/honors.tex}
+\input{content/extracurricular.tex}
+%\input{cv/writing.tex}
+
+
+\begin{table}[b]
+\begin{tabular}{ p{0.8 \textwidth}  l }
+   &   \includegraphics[height=1.5\baselineskip]{./img/unterschrift_noline.png} \\ \cline{2-2}
+   &  Susann Vorberg
+\end{tabular}
+\end{table}
+    
+   
+
+
+
+
+%-------------------------------------------------------------------------------
+\end{document}
