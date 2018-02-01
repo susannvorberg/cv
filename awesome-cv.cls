@@ -608,7 +608,7 @@
       {\entrypositionstyle{#1} & \entrydatestyle{#6}, \entrydatestyle{#4} \\}
       {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
       \entrypositionstyle{#1} & \textbf{\entrydatestyle{#6:}} \entrydatestyle{#4} \\}
-      \descriptionstyle{#5}
+      \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
   \end{tabular*}%
 }
 
@@ -683,14 +683,13 @@
   \begin{center}
     \setlength\tabcolsep{1ex}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} R{0.15\textwidth} C{0.2\textwidth} C{0.2\textwidth} C{0.2\textwidth} L{0.15\textwidth}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} R{0.15\textwidth} C{0.2\textwidth} C{0.2\textwidth} C{0.2\textwidth}}
      & 
      \subsectionstyle{basic}
      & 
      \subsectionstyle{intermediate}
      & 
-     \subsectionstyle{pro}
-     & \\
+     \subsectionstyle{pro} \\
 }{%
     \end{tabular*}
   \end{center}
@@ -702,7 +701,7 @@
 }
 
 \newcommand*{\cvskillextended}[4]{%
-	\skilltypestyle{#1} & \skillsetstyle{#2} & \skillsetstyle{#3} & \skillsetstyle{#4} & \skilltypestyle{#1}\\
+	\skilltypestyle{#1} & \skillsetstyle{#2} & \skillsetstyle{#3} & \skillsetstyle{#4}\\
 }
 
 % Define a line of cv information(skill) with stars
