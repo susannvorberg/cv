@@ -1,0 +1,12 @@
+signature.png
+
+#mac specific files
+.DS_Store
+._.DS_Store
+
+#tex files
+*.aux
+*.out
+*.log
+*.synctex.gz
+
